@@ -6,7 +6,6 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-
 call plug#begin()
 Plug 'morhetz/gruvbox'
 call plug#end()
