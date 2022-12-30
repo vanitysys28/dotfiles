@@ -13,3 +13,4 @@ call plug#end()
 set background=dark
 colorscheme gruvbox
 set termguicolors
+set term=xterm-256color
