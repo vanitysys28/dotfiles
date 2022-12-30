@@ -10,7 +10,7 @@ PS1='\[\e[0;38;5;221m\]user\[\e[0;38;5;239m\]@\[\e[0;38;5;35m\]server\[\e[0m\]:\
 
 # W3M Search Function
 duck() {
-	w3m "https://lite.duckduckgo.com/lite?kd=-1&kp=-1&q=$*" 
+w3m "https://lite.duckduckgo.com/lite?kd=-1&kp=-1&q=$*" 
 }
 
 alias ?=duck
