@@ -21,3 +21,4 @@ w3m "https://google.com/search?q=$*"
 
 alias ??=google
 
+alias battery=cat /sys/class/power_supply/BAT1/capacity
