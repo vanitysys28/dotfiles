@@ -6,7 +6,11 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 PATH=$PATH:/Applications/mpv.app/Contents/MacOS/
 
 # Prompt update
-PS1='\[\e[0;38;5;221m\]user\[\e[0m\]@\[\e[0;38;5;35m\]\H\[\e[0m\]:\[\e[0m\]\w\[\e[0m\]\$ \[\e[0m\]'
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+PS1='\[\e[0m\]╔ \[\e[0;38;5;221m\]\u\[\e[0m\]@\[\e[0;38;5;35m\]\H\[\e[0m\]:\[\e[0m\]\W\[\e[0m\]$(parse_git_branch)\n\[\e[0m\]╚ \[\e[0m\]\$ \[\e[0m\]'
 
 # W3M Search Function
 duck() {
