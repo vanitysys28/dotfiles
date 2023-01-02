@@ -17,12 +17,17 @@ duck() {
 w3m "https://lite.duckduckgo.com/lite?kd=-1&kp=-1&q=$*" 
 }
 
-alias ?=duck
 
 google() {
 w3m "https://google.com/search?q=$*"
 }
 
-alias ??=google
+# Hostname Detection Function
+#if [ "$HOSTNAME" = vm ]; then
+#    echo "success"
+#fi
 
+# Aliases
+alias ?=duck
+alias ??=google
 alias battery="cat /sys/class/power_supply/BAT1/capacity"
