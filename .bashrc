@@ -30,4 +30,5 @@ w3m "https://google.com/search?q=$*"
 # Aliases
 alias ?=duck
 alias ??=google
-alias battery="cat /sys/class/power_supply/BAT1/capacity"
+alias battery='cat /sys/class/power_supply/BAT1/capacity'
+alias ls='ls --color=auto'
