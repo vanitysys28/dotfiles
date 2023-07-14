@@ -1,34 +1,19 @@
-# Mac Fixes
-## Removing Bash Warning
-export BASH_SILENCE_DEPRECATION_WARNING=1
-
-## Adding MPV to path
-PATH=$PATH:/Applications/mpv.app/Contents/MacOS/
-
 # Prompt update
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-PS1='\[\e[0m\]╔ \[\e[0;38;5;221m\]\u\[\e[0m\]@\[\e[0;38;5;35m\]\H\[\e[0m\]:\[\e[0m\]\W\[\e[0m\]$(parse_git_branch)\n\[\e[0m\]╚ \[\e[0m\]\$ \[\e[0m\]'
+PS1='╔ \[\e[0;38;5;221m\]\u\[\e[0m\]@\[\e[0;38;5;35m\]\H\[\e[0m\]:\W`parse_git_branch`\n╚ \$ '
 
-# W3M Search Function
-duck() {
-w3m "https://lite.duckduckgo.com/lite?kd=-1&kp=-1&q=$*" 
-}
-
-
-google() {
-w3m "https://google.com/search?q=$*"
-}
-
-# Hostname Detection Function
-#if [ "$HOSTNAME" = vm ]; then
-#    echo "success"
-#fi
+# Path Update
+PATH=/c/Users/guiaub/AppData/Local/Programs/Python/Python311:/c/Users/guiaub/AppData/Local/Programs/Python/Python311/Scripts:$PATH
 
 # Aliases
-alias ?=duck
-alias ??=google
-alias battery='cat /sys/class/power_supply/BAT1/capacity'
 alias ls='ls --color=auto'
+alias isosec='date +%Y%m%d%H%M%S'
+alias note='vi $(isosec).md'
+alias grep='grep -rioI --color'
+
+# Mac Fixes
+## Removing Bash Warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
