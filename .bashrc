@@ -19,7 +19,6 @@ else
     alias ls='ls -FG'
 fi
 
-
 # Mac Fixes
 ## Removing Bash Warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
