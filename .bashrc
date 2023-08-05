@@ -10,7 +10,7 @@ PATH=/c/Users/guiaub/AppData/Local/Programs/Python/Python311:/c/Users/guiaub/App
 
 # Aliases
 alias isosec='date +%Y%m%d%H%M%S'
-alias note='mkdir $(isosec) & vi $(isosec)/README.md'
+alias note='vi $(isosec).md'
 if ls --help 2>&1 | grep -q -- --color
 then
     alias ls='ls --color=auto -F'
