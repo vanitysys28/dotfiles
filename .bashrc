@@ -17,6 +17,9 @@ then
 else
     alias ls='ls -FG'
 fi
+alias grep="grep -i"
+alias python="python3"
+alias pip="pip3"
 
 # Mac Fixes
 ## Removing Bash Warning
