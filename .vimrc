@@ -1,4 +1,5 @@
 syntax on
+filetype plugin indent on
 
 call plug#begin()
 Plug 'morhetz/gruvbox'
