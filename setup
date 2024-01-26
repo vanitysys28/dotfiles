@@ -1,3 +1,4 @@
 ln -sf "$PWD/.bashrc" "$HOME/.bashrc"
+ln -sf "$PWD/.emacs" "$HOME/.emacs"
 ln -sf "$PWD/.vimrc" "$HOME/.vimrc"
 ln -sf "$PWD/.tmux.conf" "$HOME/.tmux.conf"
