@@ -7,6 +7,7 @@
 (package-install 'web-mode))
 
 (setq inhibit-splash-screen t
+      visible-bell t
       make-backup-files nil)
 
 (menu-bar-mode 0)
