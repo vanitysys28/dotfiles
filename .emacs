@@ -5,7 +5,10 @@
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
 
-(ido-mode 1)
+(ido-mode t)
+(cua-mode t)
+
+(defalias 'yes-or-no-p 'y-or-n-p)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -18,4 +21,5 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-) 
+ )
+ 
