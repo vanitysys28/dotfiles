@@ -6,7 +6,7 @@ parse_git_branch() {
 PS1='\[\e[0;38;5;221m\]\u\[\e[0m\]@\[\e[0;38;5;35m\]\H\[\e[0m\]:\W`parse_git_branch`\$ '
 
 # Path Update
-PATH=/c/Users/guiaub/AppData/Local/Programs/Python/Python311:/c/Users/guiaub/AppData/Local/Programs/Python/Python311/Scripts:$PATH
+export PATH=$HOME/bin/:/c/Users/guiaub/AppData/Local/Programs/Python/Python311:/c/Users/guiaub/AppData/Local/Programs/Python/Python311/Scripts:$PATH
 
 # Aliases
 alias isosec='date +%Y%m%d%H%M%S'
