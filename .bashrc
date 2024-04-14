@@ -18,6 +18,9 @@ fi
 alias python="python3"
 alias pip="pip3"
 
-# Mac Fixes
-## Removing Bash Warning
-export BASH_SILENCE_DEPRECATION_WARNING=1
+# Linux
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+startx
+fi
+
+bind 'set completion-ignore-case on'
