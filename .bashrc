@@ -9,15 +9,12 @@ PS1='\[\e[0;38;5;221m\]\u\[\e[0m\]@\[\e[0;38;5;35m\]\H\[\e[0m\]:\W`parse_git_bra
 export PATH=$HOME/bin/:/c/Users/guiaub/AppData/Local/Programs/Python/Python311:/c/Users/guiaub/AppData/Local/Programs/Python/Python311/Scripts:$PATH
 
 # Aliases
-alias isosec='date +%Y%m%d%H%M%S'
-alias note='vi $(isosec).md'
 if ls --help 2>&1 | grep -q -- --color
 then
     alias ls='ls --color=auto -F'
 else
     alias ls='ls -FG'
 fi
-alias grep="grep -i"
 alias python="python3"
 alias pip="pip3"
 
