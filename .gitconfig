@@ -1,3 +1,5 @@
 [user]
 	name = vanitysys28
 	email = guiaubzer@gmail.com
+[init]
+	defaultBranch = main
