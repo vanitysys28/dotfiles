@@ -13,6 +13,7 @@ general {
 
 order += "wireless _first_"
 order += "battery main"
+order += "volume master"
 order += "time"
 
 wireless _first_ {
@@ -27,4 +28,12 @@ battery main {
 
 time {
         format = "%d-%m-%Y %H:%M:%S"
+}
+
+volume master {
+        format = "%volume"
+        format_muted = "Muted"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
 }
