@@ -12,16 +12,11 @@ general {
 }
 
 order += "wireless _first_"
-order += "battery main"
 order += "volume master"
 
 wireless _first_ {
         format_up = "Connected"
         format_down = "Disconnected"
-}
-
-battery main {
-        format = "%percentage"
 }
 
 volume master {
