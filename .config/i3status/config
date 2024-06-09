@@ -12,17 +12,8 @@ general {
 }
 
 order += "wireless _first_"
-order += "volume master"
 
 wireless _first_ {
         format_up = "Connected"
         format_down = "Disconnected"
-}
-
-volume master {
-        format = "%volume"
-        format_muted = "Muted"
-        device = "default"
-        mixer = "Master"
-        mixer_idx = 0
 }
