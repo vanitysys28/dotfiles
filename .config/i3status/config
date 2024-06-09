@@ -14,7 +14,6 @@ general {
 order += "wireless _first_"
 order += "battery main"
 order += "volume master"
-order += "time"
 
 wireless _first_ {
         format_up = "Connected"
@@ -23,11 +22,6 @@ wireless _first_ {
 
 battery main {
         format = "%percentage"
-}
-
-
-time {
-        format = "%d-%m-%Y %H:%M:%S"
 }
 
 volume master {
