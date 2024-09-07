@@ -4,8 +4,6 @@ filetype plugin indent on
 set nocompatible
 
 set background=dark
-set term=xterm-256color
-set termguicolors
 
 set ignorecase 
 set incsearch
