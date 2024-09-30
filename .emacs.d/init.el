@@ -18,7 +18,6 @@
 (electric-pair-mode 1)
 
 (ido-mode t)
-(cua-mode t)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
