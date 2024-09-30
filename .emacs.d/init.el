@@ -7,7 +7,6 @@
 (package-install 'web-mode))
 
 (setq inhibit-splash-screen t
-      visible-bell t
       make-backup-files nil)
 
 (menu-bar-mode 0)
@@ -26,10 +25,5 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(yaml-mode magit compat web-mode svelte-mode)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+ '(org-agenda-files '("~/notes/notes.org"))
+ '(package-selected-packages '(magit yaml-mode compat web-mode)))
