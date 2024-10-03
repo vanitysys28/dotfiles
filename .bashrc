@@ -1,12 +1,7 @@
-# Prompt update
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-
 PS1='[\W]\$ '
 
-# Path Update
-export PATH=$HOME/bin/:$PATH
+export PATH=$PATH:$HOME/bin
+bind 'set completion-ignore-case on'
 
 # Aliases
 if ls --help 2>&1 | grep -q -- --color
@@ -15,12 +10,5 @@ then
 else
     alias ls='ls -FG'
 fi
-alias python="python3"
-alias pip="pip3"
 
-# Linux
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-startx
-fi
 
-bind 'set completion-ignore-case on'
