@@ -6,7 +6,7 @@ parse_git_branch() {
 PS1='[\W]\$ '
 
 # Path Update
-export PATH=$HOME/bin/:/c/Users/guiaub/AppData/Local/Programs/Python/Python311:/c/Users/guiaub/AppData/Local/Programs/Python/Python311/Scripts:$PATH
+export PATH=$HOME/bin/:$PATH
 
 # Aliases
 if ls --help 2>&1 | grep -q -- --color
