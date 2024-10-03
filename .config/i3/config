@@ -30,7 +30,7 @@ bindsym XF86MonBrightnessUp exec echo $(( $(cat "/sys/class/backlight/acpi_video
 bindsym XF86MonBrightnessDown exec echo $(( $(cat "/sys/class/backlight/acpi_video0/brightness") - 5 )) > "/sys/class/backlight/acpi_video0/brightness" && $refresh_i3status
 
 # Screenshot
-bindsym --release $mod+s exec scrot -s -e 'xclip -selection clipboard -t image/png -i $f'
+bindsym --release $mod+s exec scrot -s -f -e 'xclip -selection clipboard -t image/png -i $f'
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
