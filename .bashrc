@@ -1,6 +1,6 @@
 PS1='[\W]\$ '
 
-export PATH=$PATH:$HOME/bin
+export PATH=$HOME/.local/bin:$PATH
 bind 'set completion-ignore-case on'
 
 # Aliases
