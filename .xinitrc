@@ -1,3 +1,4 @@
-xrdb -merge ~/.Xresources &
-xmodmap ~/.Xmodmap &
-i3
+export PATH=$HOME/.local/bin:$PATH
+xrdb -merge ~/.Xresources
+xmodmap ~/.Xmodmap
+exec i3
