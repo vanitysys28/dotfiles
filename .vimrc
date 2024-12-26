@@ -15,6 +15,3 @@ nnoremap <silent><CR> :noh<CR>
 set nowritebackup
 set noswapfile
 set nobackup
-
-map <c-c> ggVG"*y
-
