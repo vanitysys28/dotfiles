@@ -5,4 +5,3 @@ URxvt.font:xft:DejaVu Sans Mono:size=10
 URxvt.scrollBar:false
 !URxvt.background:black
 !URxvt.foreground:white
-
