@@ -12,6 +12,6 @@ set mouse=a
 
 nnoremap <silent><CR> :noh<CR>
 
-set nowritebackup
-set noswapfile
 set nobackup
+set noswapfile
+set nowritebackup
