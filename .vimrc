@@ -4,9 +4,9 @@ set nocompatible
 
 set background=dark
 
-set ignorecase 
-set incsearch
 set hlsearch
+set incsearch
+set ignorecase 
 
 set mouse=a
 
