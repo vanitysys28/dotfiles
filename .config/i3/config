@@ -94,6 +94,6 @@ bindsym $mod+r mode "resize"
 
 # i3bar Initialization
 bar {
-        status_command ~/.config/i3status/custom.sh
+        status_command ~/.config/i3status/custom
 }
 
