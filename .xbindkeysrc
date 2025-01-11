@@ -1,0 +1,17 @@
+"urxvt"
+Mod4 + Return
+
+"xdotool getactivewindow | xargs xdotool windowkill"
+Mod4 + k
+
+"window_switcher"
+Mod4 + Tab
+
+"amixer set Master 5%+"
+XF86AudioRaiseVolume 
+
+"amixer set Master 5%-"
+XF86AudioLowerVolume 
+
+#"xprop -root _NET_ACTIVE_WINDOW | cut -d' ' -f5 | xargs xprop -id | grep _NET_WM_PID | cut -d'=' -f2 | xargs kill"
+
