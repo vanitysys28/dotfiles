@@ -1,6 +1,6 @@
 export PATH=$HOME/.local/bin:$PATH
-xrdb -merge ~/.Xresources
-xmodmap ~/.Xmodmap
-xbindkeys 
+xrdb -merge $HOME/.config/X11/xresources
+xmodmap $HOME/.config/X11/xmodmap
+xbindkeys -f $HOME/.config/X11/xbindkeys 
 exec i3
 # exec blackbox
