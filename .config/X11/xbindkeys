@@ -4,7 +4,7 @@ Mod4 + Return
 "xdotool getactivewindow | xargs xdotool windowkill"
 Mod4 + k
 
-"window_switcher"
+"alt_tab"
 Mod4 + Tab
 
 "amixer set Master 5%+"
