@@ -1,0 +1,7 @@
+ [begin] (Menu)
+   	[exec] (urxvt) {urxvt}
+   	[exec] (firefox) {firefox}
+   	[exec] (telegram) {telegram}
+	[restart] (restart)
+ 	[exit] (exit)
+ [end]
