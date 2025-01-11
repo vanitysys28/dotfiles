@@ -1,5 +1,5 @@
 PS1='[\W]\$ '
-HISTFILE=~/.cache/bash_history
+HISTFILE=$HOME/.cache/bash_history
 
 bind 'set completion-ignore-case on'
 
