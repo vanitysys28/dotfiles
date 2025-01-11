@@ -1,3 +1,3 @@
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-startx
+startx $HOME/.config/X11/xinitrc
 fi
