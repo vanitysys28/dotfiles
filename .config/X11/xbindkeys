@@ -1,7 +1,7 @@
 "urxvt"
 Mod4 + Return
 
-"xdotool getactivewindow | xargs xdotool windowkill"
+"xdotool getactivewindow | xargs xdotool windowclose"
 Mod4 + k
 
 "alt_tab"
