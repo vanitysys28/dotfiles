@@ -2,5 +2,5 @@ export PATH=$HOME/.local/bin:$PATH
 xrdb -merge $HOME/.config/X11/xresources
 xmodmap $HOME/.config/X11/xmodmap
 xbindkeys -f $HOME/.config/X11/xbindkeys 
-# exec i3
 exec blackbox -rc $HOME/.config/blackbox/blackboxrc
+# exec i3
