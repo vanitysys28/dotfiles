@@ -6,5 +6,4 @@ window_list=$(xdotool search --desktop 0 "" | grep -vE "629|1043")
 echo $window_list > /tmp/windows
 previous_window=$(grep -oP '\S+(?= '"$current_window"')' /tmp/windows)
 
-xdotool windowraise $previous_window
-xdotool windowfocus $previous_window
+xdotool windowactivate $previous_window
