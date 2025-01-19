@@ -1,30 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
-# Get the ID of the currently active window
-current_window=$(xdotool getactivewindow)
+current_window=$(xdotool getwindowfocus)
+window_list=$(xdotool search --desktop 0 "" | grep -vE "629|1043")
 
-# Get the list of all window IDs
-window_list=$(xdotool search --desktop 0 --class "")
+echo $window_list > /tmp/windows
+previous_window=$(grep -oP '\S+(?= '"$current_window"')' /tmp/windows)
 
-# Create an array of window IDs
-window_array=($window_list)
-
-# Find the index of the current window
-current_index=-1
-for i in "${!window_array[@]}"; do
-    if [[ "${window_array[i]}" == "$current_window" ]]; then
-        current_index=$i
-        break
-    fi
-done
-
-# Calculate the index of the previous window
-if [[ $current_index -eq 0 ]]; then
-    previous_index=$((${#window_array[@]} - 1))
-else
-    previous_index=$(($current_index - 1))
-fi
-
-# Activate the previous window
-xdotool windowraise "${window_array[$previous_index]}"
-xdotool windowfocus "${window_array[$previous_index]}"
+xdotool windowraise $previous_window
+xdotool windowfocus $previous_window
