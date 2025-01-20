@@ -1,9 +1,12 @@
 #!/bin/sh
 
 current_window=$(xdotool getwindowfocus)
-window_list=$(xdotool search --desktop 0 "" | grep -vE "629|1043")
+window_list=$(xdotool search "" | grep -vE "629|1043")
 
 echo $window_list > /tmp/windows
 previous_window=$(grep -oP '\S+(?= '"$current_window"')' /tmp/windows)
 
-xdotool windowactivate $previous_window
+#previous_window=$(xdotool search "" | grep -vE "629" | xargs -I {} xdotool getwindowpid {} | xargs -I {} xdotool search --limit 1 --pid {} | tac | awk '!seen[$0]++' | head -n 2 | tail -n 1)
+
+xdotool windowfocus $previous_window
+xdotool windowraise $previous_window
