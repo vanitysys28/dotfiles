@@ -1,4 +1,4 @@
-PS1='[\W]\$ '
+PS1='% '
 HISTFILE=$HOME/.cache/bash_history
 export LESSHISTFILE=-
 
