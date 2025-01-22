@@ -1,7 +1,9 @@
-export PATH=$HOME/.local/bin:$HOME/.local/bin/scripts:$PATH
+export PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/scripts
 xrdb -merge $HOME/.config/X11/xresources
 xmodmap $HOME/.config/X11/xmodmap
 xbindkeys -f $HOME/.config/X11/xbindkeys 
 xsetroot -gray
-exec blackbox -rc $HOME/.config/blackbox/blackboxrc
-# exec 9wm -border -cursor v1
+# exec i3
+# exec blackbox -rc $HOME/.config/blackbox/blackboxrc
+# exec 9wm
+exec rio
