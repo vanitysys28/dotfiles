@@ -1,4 +1,4 @@
-export PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/scripts
+export PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/scripts:/usr/local/plan9/bin
 xrdb -merge $HOME/.config/X11/xresources
 xmodmap $HOME/.config/X11/xmodmap
 xbindkeys -f $HOME/.config/X11/xbindkeys 
