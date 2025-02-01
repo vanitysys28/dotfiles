@@ -4,6 +4,4 @@ xmodmap $HOME/.config/X11/xmodmap
 xbindkeys -f $HOME/.config/X11/xbindkeys 
 xsetroot -gray
 # exec i3
-# exec blackbox -rc $HOME/.config/blackbox/blackboxrc
-# exec 9wm
 exec rio
