@@ -4,3 +4,4 @@ export LESSHISTFILE=-
 
 bind 'set completion-ignore-case on'
 
+alias ll="ls -lah"
