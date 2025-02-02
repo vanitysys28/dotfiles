@@ -1,5 +1,4 @@
 xrdb -merge $HOME/.config/X11/xresources
 xmodmap $HOME/.config/X11/xmodmap
 xbindkeys -f $HOME/.config/X11/xbindkeys 
-# exec i3
-exec rio
+exec cwm
