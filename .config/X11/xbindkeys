@@ -4,6 +4,9 @@ Mod4 + Return
 "xdotool getwindowfocus | xargs xdotool windowkill"
 Mod4 + k
 
+"scrot /tmp/%s.png -s -f -e 'xclip -selection clipboard -t image/png -i $f'"
+Mod4 + s
+
 "alt_tab"
 Mod4 + Tab
 
