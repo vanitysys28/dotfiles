@@ -1,4 +1,4 @@
-"urxvt"
+"xterm"
 Mod4 + Return
 
 "xdotool getwindowfocus | xargs xdotool windowkill"

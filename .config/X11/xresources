@@ -1,7 +1,9 @@
 Xft.dpi: 192
 
-URxvt.title:Terminal
-URxvt.font:xft:DejaVu Sans Mono:size=10
-URxvt.scrollBar:false
-!URxvt.background:black
-!URxvt.foreground:white
+XTerm.vt100.metaSendsEscape: true
+Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+XTerm.vt100.faceName: DejaVu Sans Mono
+XTerm.vt100.faceSize: 10
+XTerm.vt100.renderFont: true
