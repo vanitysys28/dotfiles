@@ -7,9 +7,6 @@ Mod4 + k
 "scrot /tmp/%s.png -s -f -e 'xclip -selection clipboard -t image/png -i $f'"
 Mod4 + s
 
-"alt_tab"
-Mod4 + Tab
-
 "amixer set Master 5%+"
 XF86AudioRaiseVolume 
 
