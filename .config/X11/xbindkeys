@@ -1,11 +1,11 @@
 "pgrep xterm > /dev/null && xdotool search tmux windowfocus windowraise || xterm -T 'tmux' -e 'tmux a || tmux'"
-Mod4 + Return
+Alt + Return
 
 "xdotool getwindowfocus | xargs xdotool windowkill"
-Mod4 + k
+Alt + k
 
 "scrot /tmp/%s.png -s -f -e 'xclip -selection clipboard -t image/png -i $f'"
-Mod4 + s
+Alt + s
 
 "amixer set Master 5%+"
 XF86AudioRaiseVolume 
